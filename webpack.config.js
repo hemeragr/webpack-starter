@@ -1,17 +1,17 @@
 const path = require('path');
 
 module.exports = {
-    entry: {
-      index: './src/index.js',
-    },
-    devServer: {
-        static: path.join(__dirname, '/'),
-        compress: true,
-        port: 9000,
-    },
     output: {
-      filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'dist'),
-      clean: true,
-    },
+        path: path.resolve(__dirname, "public"),
+        filename: "index.js",
+      },
+      entry: {
+        main: "./src/index.js",
+      },
+      devServer: {
+        static: './',
+        port: 9001,
+        headers: { "Access-Control-Allow-Origin": "*" },
+      },
+      devtool: "inline-source-map",    
 };

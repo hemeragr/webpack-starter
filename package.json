@@ -4,7 +4,7 @@
   "description": "Webpack vanilla starter seed",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack-dev-server --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

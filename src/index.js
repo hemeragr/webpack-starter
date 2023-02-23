@@ -24,3 +24,4 @@ adddButton.addEventListener('click', function() {
 	renderContacts(users);
 
 });
+
